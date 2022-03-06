@@ -4,66 +4,66 @@
 /* Define font-faces for the Bellota font */
 
 @font-face {
-    font-family : 'Bellota';
-    font-style : normal;
-    font-weight : 400;
-    src : url(../fonts/Bellota/Bellota-Regular.ttf);
-    unicode-range : U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Bellota/Bellota-Regular.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-    font-family : 'Bellota';
-    font-style : bold;
-    font-weight : 800;
-    src : url(../fonts/Bellota/Bellota-Bold.ttf);
-    unicode-range : U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Bellota';
+    font-style: bold;
+    font-weight: 800;
+    src: url(../fonts/Bellota/Bellota-Bold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* Style webpages & define grid elements */
 
 html {
-    width : 100vw;
-    height : 100vh;
-    font-family : 'Helvetica';
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica';
     background-image:url(../media/Mt-Roberts.jpg);
     background-size:cover;
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    width : 100%;
-    min-height : 100%;
-    display : grid;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: auto 1fr auto;
-    margin : 0;
-    padding : 0;
-    background-color : rgba(71,107,107,0.75);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(71,107,107,0.75);
 }
 
 .header {
-    width : 98%;
-    grid-area : header;
+    width: 98%;
+    grid-area: header;
     background-color: rgba(255,255,255,0.0);
-    margin : 1% 0 1% 2%;
+    margin: 1% 0 1% 2%;
 }
 
 .main {
     width: 90%;
     grid-area: main;
-    overflow : auto;
+    overflow: auto;
     margin: 0 5% 0 5%;
-    padding : 5% 0 5% 0;
+    padding: 5% 0 5% 0;
     z-index: 2;
 }
 
 .footer {
     grid-area: footer;
-    display : flex;
-    align-items : center;
-    justify-content : center;
-    margin : 1% 0 1% 0;
-    padding : 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0 1% 0;
+    padding: 0;
     background-color: rgba(255,255,255,0.0);
 }
 
@@ -72,28 +72,28 @@ body {
 .container-fluid {
     width: 100%;
     min-height: 100%;
-    display : flex;
-    align-items : center;
-    margin : 0;
-    padding : 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-header a {
     font-family: 'Bellota';
     font-size: 3.25em;
     color: rgba(255,255,255,1.0);
-    border : solid rgba(255,255,255,0.0);
+    border: solid rgba(255,255,255,0.0);
     font-weight: bold;
 }
 
 .navbar-header a:hover, .navbar-header a:focus {
-    outline : none;
+    outline: none;
     background-color: transparent;
-    text-decoration : none;
+    text-decoration: none;
 }
 
 .navbar-header a:focus {
-    border : solid rgba(255,255,255,1.0);
+    border: solid rgba(255,255,255,1.0);
 }
 
 .navbar-header a .bg-contrast {
@@ -104,12 +104,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin : 0 10% 0 auto;
+    margin: 0 10% 0 auto;
     justify-content: end;
 }
 
 .navbar-nav li {
-    margin : 0 2em 0 2em;
+    margin: 0 2em 0 2em;
 }
 
 .navbar-nav li a {
@@ -119,23 +119,23 @@ body {
 }
 
 .navbar-nav li a:hover, .navbar-nav li a:focus {
-    color : rgba(179,204,204,1.0);
-    outline : none;
+    color: rgba(179,204,204,1.0);
+    outline: none;
     background-color: transparent;
-    text-decoration : underline;
+    text-decoration: underline;
 }
 
 /* Style the main content area */
 
 .content {
-    width : 90%;
-    margin : 0 5% 0 5%;
+    width: 90%;
+    margin: 0 5% 0 5%;
 }
 
 .content-split {
-    width : 65%;
-    float : left;
-    margin : 0 5% 0 5%;
+    width: 65%;
+    float: left;
+    margin: 0 5% 0 5%;
 }
 
 .float-box {
@@ -152,30 +152,30 @@ body {
 }
 
 .graphic {
-    float : left;
-    width : 20%;
-    margin : 0 5% 0 0;
+    float: left;
+    width: 20%;
+    margin: 0 5% 0 0;
 }
 
 img {
     width: 100%;
     margin: 0;
     border-radius: 2em;
-    opacity : 0.75;
+    opacity: 0.75;
 }
 
 iframe {
-    width : 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 .frame-host {
-    min-height : 100%;
+    min-height: 100%;
 }
 
 .stretch-frame {
-    min-height : 50vh;
+    min-height: 50vh;
 }
 
 /* Style the footer */
@@ -183,7 +183,7 @@ iframe {
 .footer .fa {
     font-size: 2.5em;
     margin: 0 2em 0 2em;
-    color : rgba(255,255,255,1.0);
+    color: rgba(255,255,255,1.0);
 }
 
 .footer .fa:hover, #social-links .fa:focus {
