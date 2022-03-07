@@ -21,13 +21,14 @@
 /* Style webpages & define grid elements */
 
 html {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin: 0;
+    padding: 0;
     font-family: 'Helvetica';
     background-image:url(../media/Mt-Roberts.jpg);
     background-size:cover;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -45,7 +46,8 @@ body {
     width: 98%;
     grid-area: header;
     background-color: rgba(255,255,255,0.0);
-    margin: 1% 0 1% 2%;
+    margin: 1% 0 1% 0;
+    padding: 0;
 }
 
 .main {
@@ -53,7 +55,7 @@ body {
     grid-area: main;
     overflow: auto;
     margin: 0 5% 0 5%;
-    padding: 5% 0 5% 0;
+    padding: 3% 0 3% 0;
     z-index: 2;
 }
 
@@ -74,38 +76,47 @@ body {
     min-height: 100%;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0 0 0 2%;
     padding: 0;
 }
 
-.navbar-header a {
+.navbar-brand {
     font-family: 'Bellota';
     font-size: 3.25em;
     color: rgba(255,255,255,1.0);
     border: solid rgba(255,255,255,0.0);
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-header a:hover, .navbar-header a:focus {
+.navbar-brand:hover, .navbar-brand:focus {
     outline: none;
     background-color: transparent;
     text-decoration: none;
+    color: rgba(255,255,255,1.0);
 }
 
-.navbar-header a:focus {
+.navbar-brand:focus {
     border: solid rgba(255,255,255,1.0);
 }
 
-.navbar-header a .bg-contrast {
+.navbar-brand .bg-contrast {
     color: rgba(179,204,204,1.0);
 }
 
+.container-fluid button {
+    color: rgba(255,255,255,1.0);
+    font-size: 2.5em;
+}
+
 .navbar-nav {
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0 10% 0 auto;
     padding: 0;
     list-style: none;
-    margin: 0 10% 0 auto;
-    justify-content: end;
 }
 
 .navbar-nav li {
@@ -139,7 +150,7 @@ body {
 }
 
 .float-box {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,1.0);
     padding: 2% 3% 2% 3%;
     color: rgba(0,0,0,1.0);
     border-radius: 0 2em 2em 2em;
@@ -157,11 +168,14 @@ body {
     margin: 0 5% 0 0;
 }
 
+.graphic img {
+    border-radius: 2em;
+}
+
 img {
     width: 100%;
     margin: 0;
-    border-radius: 2em;
-    opacity: 0.75;
+    
 }
 
 iframe {
@@ -186,8 +200,32 @@ iframe {
     color: rgba(255,255,255,1.0);
 }
 
-.footer .fa:hover, #social-links .fa:focus {
+.footer .fa, .footer .fa:hover, #social-links .fa:focus {
     text-decoration: none;
+}
+
+/* Style for mobile */
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        margin: 0 5% 0 5%;
+    }
+
+    .content-split {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin: 0;
+    }
+
+    .navbar-nav li {
+        margin: 0;
+    }
 }
 
 /* Style generic elements */
