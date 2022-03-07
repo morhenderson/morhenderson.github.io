@@ -207,6 +207,7 @@ iframe {
 /* Style for mobile */
 
 @media only screen and (max-width: 768px) {
+
     .container-fluid {
         margin: 0 5% 0 5%;
     }
@@ -225,6 +226,11 @@ iframe {
 
     .navbar-nav li {
         margin: 0;
+    }
+
+    .d-lg-none img {
+        width : 90%;
+        margin : 1% 5% 5% 5%;
     }
 }
 
