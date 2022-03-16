@@ -38,7 +38,7 @@ h3 {
 h4 {
     font-size: 1.25em;
     font-weight: normal;
-    margin: .5em 0 .5em 0;
+    margin: 1em 0 1em 0;
     color: rgba(71,107,107,1.0);
 }
 
@@ -61,7 +61,7 @@ html {
     padding: 0;
     display: table;
     font-family: 'Helvetica';
-    background-image:url(../media/Mt-Roberts.jpg);
+    background-image:url(../media/images/Mt-Roberts.jpg);
     background-size:cover;
 }
 
@@ -201,6 +201,12 @@ body {
 
 .split-graphic img {
     border-radius: 2em;
+    margin: 5% 0 5% 0;
+}
+
+.float-box .split-graphic img {
+    width:90%;
+    margin: 10% 5% 0 5%;
 }
 
 img {
@@ -243,6 +249,11 @@ iframe {
 .bf-blue {
     font-weight: bold;
     color: #0d6efd;
+}
+
+.unavailable, .unavailable:hover, .unavailable:focus {
+    color: rgba(150,150,150,1.0);
+    text-decoration: none;
 }
 
 .blog {
@@ -334,6 +345,11 @@ iframe {
     .split-content {
         width: 100%;
         margin: 0;
+    }
+
+    .split-graphic {
+        width: 70%;
+        margin: 0 15% 0 15%;
     }
 
     .navbar-nav {
