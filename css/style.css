@@ -188,7 +188,7 @@ body {
 
 .float-box {
     background-color: rgba(255,255,255,1.0);
-    padding: 2% 3% 2% 3%;
+    padding: 2% 3% 3% 3%;
     color: rgba(0,0,0,1.0);
     border-radius: 0 2em 2em 2em;
 }
@@ -247,14 +247,44 @@ iframe {
     margin: .5em 0 0 0;
 }
 
-.bf-blue {
+.bf {
     font-weight: bold;
-    color: #0d6efd;
 }
 
 .unavailable, .unavailable:hover, .unavailable:focus {
     color: rgba(150,150,150,1.0);
     text-decoration: none;
+}
+
+form {
+    width: 50%;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+    background-color: rgba(205,230,230,1.0);
+    border-radius: 0 2em 2em 2em;
+}
+
+form label {
+    width: 100%;
+    margin: 0 0 1% 0;
+    font-weight: bold;
+}
+
+form label i {
+    margin: 0 1% 0 0;
+}
+
+form textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    border-color: rgba(71,107,107,1.0);
+    background-color: rgba(255,255,255,1.0);
+    border-radius: .5em;
+    width: 20%;
+    margin: 0 0 0 75%;
 }
 
 .blog {
@@ -367,6 +397,10 @@ iframe {
     .d-lg-none img {
         width : 90%;
         margin : 5% 5% 5% 5%;
+    }
+
+    form {
+        width: 100%;
     }
 
     .blog {
