@@ -12,14 +12,14 @@
     <body>
         <nav class="header navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="./">
+                <a class="navbar-brand d-none d-lg-block" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>organ H<span class="bg-contrast">e</span>nderson
                 </a>
-                <a class="navbar-brand d-block d-lg-none" href="./">
+                <a class="navbar-brand d-block d-lg-none" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>H
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false">
-                    <i title="" class="fa fa-bars"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Mobile Menu">
+                    <i aria-label="Mobile Menu" class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-default" id="site-menu">
                     <ul class="navbar-nav" aria-label="Menu">
@@ -35,7 +35,7 @@
         <div class="main">
             <div class="float-box content">
 
-                <h2>Portfolio</h2>
+                <h1>Portfolio</h1>
                 <p>
                     All of the programs discussed on this page can be found on 
                     <a href="https://github.com/morhenderson?tab=repositories" target="_blank">my personal GitHub</a>, either 
@@ -43,7 +43,7 @@
                     repo which contains a few simple example programs I've written.
                 </p>
 
-                <h3>Filtering Algorithms</h3>
+                <h2>Filtering Algorithms</h2>
                 <p>
                     I first learned about Kalman filters in a graduate level course titled "Statistical Estimation for Dynamical 
                     Systems". Later I served as teaching assistant for the course and took an advanced section that dove deeper 
@@ -51,7 +51,7 @@
                 </p>
 
                 <div class="split-content">
-                    <h4>Buffmo</h4>
+                    <h3>Buffmo</h3>
                     <p class="bm">
                         As TA for the Statistical Estimation course, I decided to write a basic but thorough tutorial on the
                         standard Kalman Filter (including truth modeling) applied to a simple linear dynamical system. It includes a 
@@ -63,11 +63,11 @@
                     <a href="media/documents/Buffmo.pdf" target="_blank" download>Download Buffmo.pdf</a>
                 </div>
                 <div class="split-graphic">
-                    <img src="media/images/Buffmo_Trj.png">
+                    <img src="media/images/Buffmo_Trj.png" alt="An example trajectory from the Buffmo program">
                 </div>
                 
                 <div class="split-content">
-                    <h4>OD-Filters</h4>
+                    <h3>OD-Filters</h3>
                     <p class="bm">
                         After my semester as TA, I was impressed by the final projects students had submitted and decided to revisit
                         my own project from the course with the benefit of a few years of practice. The theme of the project is
@@ -79,10 +79,10 @@
                     <a href="#" class="unavailable" download>Download OD-Writeup.pdf</a>                    
                 </div>
                 <div class="split-graphic">
-                    <img src="media/images/OD_DL-Meas.png">
+                    <img src="media/images/OD_DL-Meas.png" alt="Example measurements from the OD-Filters program">
                 </div>
                 
-                <h3>Machine Learning</h3>
+                <h2>Machine Learning</h2>
                 <p>
                     I became interested in machine learning as an undergraduate, when I began to experiment with simple methods like 
                     genetic algorithms. During my summer with the NASA Frontier Development Lab, I gained some education and hands-on
@@ -90,7 +90,7 @@
                 </p>
 
                 <div class="split-content">
-                    <h4>Myc-Drop</h4>
+                    <h3>Myc-Drop</h3>
                     <p class="bm">
                         I wrote the Myc-Drop program specifically for this portfolio. It creates and trains a simple fully-connected 
                         feed-forward network, with architecture and learning parameters set by the user, to classify samples from a  
@@ -104,11 +104,10 @@
                     <a href="#" class="unavailable" download>Download Myc-Drop.pdf</a>
                 </div>
                 <div class="split-graphic">
-                    <img src="media/images/Myc-Drop_BA-All.png">
+                    <img src="media/images/Myc-Drop_BA-All.png" alt="Some testing results from the Myc-Drop program">
                 </div>
                 
-
-                <h4>Nevermore</h4>
+                <h3>Nevermore</h3>
                 <div class="split-content">
                     <p class="bm">
                         The Nevermore program is a Poe-etic variation of the classic genetic algorithm problem in which fitness among a 
@@ -120,12 +119,10 @@
                     <a href="media/documents/Nevermore.txt" target="_blank" download>Download Nevermore.txt</a>
                 </div>
                 <div class="split-graphic">
-                    <img src="media/images/Nevermore.png">
+                    <img src="media/images/Nevermore.png" alt="A depiction of the Nevermore.txt file">
                 </div>
-                
-                
 
-                <h3>Finite Elements</h3>
+                <h2>Finite Elements</h2>
                 <p>
                     Like filtering algorithms, I learned about the finite element method through my engineering coursework
                     at CU Boulder. I took a course titled "Introduction to Finite Elements" that covered some basic theory,
@@ -135,7 +132,7 @@
                 </p>
 
                 <div class="split-content">
-                    <h4>Truss-Me</h4>
+                    <h3>Truss-Me</h3>
                     <p class="bm">
                         The Truss-Me program is an adaptation of a program used in the 
                     </p>
@@ -143,10 +140,10 @@
                     <a href="media/documents/programs/Truss-Me.py" target="_blank" download>Download Truss-Me.py</a>
                 </div>
                 <div class="split-graphic">
-                    <img src="media/images/Truss-Me_E-Stress.png">
+                    <img src="media/images/Truss-Me_E-Stress.png" alt="Element stresses from the Truss-Me program">
                 </div>
 
-                <h3>Lattice Dynamics</h3>
+                <h2>Lattice Dynamics</h2>
                 <p>
                     The primary focus of my research as a graduate student was thermal transport in nanoengineerd semiconductor 
                     matrials. One of the central themes in this research was the study of phonons through lattice dynamics models 
@@ -154,12 +151,24 @@
                     modes in the field of classical mechanics.
                 </p>
 
+                <div class="split-content">
+                    <h3>Noble-Phonons</h3>
+                    <p class="bm">
+                        The Noble-Phonons program is...
+                    </p>
+                    <br />
+                    <a href="#" target="_blank" class="unavailable" download>Download Noble-Phonons.py</a>
+                </div>
+                <div class="split-graphic">
+                    <img src="media/images/Crystal-Lattices.png" alt="Crystal lattices from the Noble-Phonons program">
+                </div>
+
             </div>
         </div>
         <div class="footer">
-            <a href="https://www.linkedin.com/in/morganjhenderson" class="fa fa-linkedin"></a>
-            <a href="https://github.com/morhenderson" class="fa fa-github"></a>
-            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google"></a>
+            <a href="linkedin.com/in/morganjhenderson" class="fa fa-linkedin" aria-label="View me on LinkedIn"></a>
+            <a href="github.com/morhenderson" class="fa fa-github" aria-label="Visit my GitHub"></a>
+            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google" aria-label="Send me an email"></a>
         </div>
 	</body>
     <script src="jscript/bootstrap.js"></script>

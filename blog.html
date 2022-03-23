@@ -12,14 +12,14 @@
     <body>
         <nav class="header navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="./">
+                <a class="navbar-brand d-none d-lg-block" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>organ H<span class="bg-contrast">e</span>nderson
                 </a>
-                <a class="navbar-brand d-block d-lg-none" href="./">
+                <a class="navbar-brand d-block d-lg-none" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>H
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false">
-                    <i title="" class="fa fa-bars"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Mobile Menu">
+                    <i aria-label="" class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-default" id="site-menu">
                     <ul class="navbar-nav" aria-label="Menu">
@@ -34,14 +34,14 @@
         </nav>
         <div class="main">
             <div class="float-box content">
-                <h2>Blog</h2>
+                <h1>Blog</h1>
 
-                <h3>Entries by Date</h3>
+                <h2>Entries by Date</h2>
                 <div class="blog">
                     <div class="listings">
                         <div class="listing">
                             <p><span class="date">00/00/0000</span>&emsp;<span class="topic">(Topic)</span></p>
-                            <h4 class="listing-title">Entry 1 Title</h3>
+                            <h3 class="listing-title">Entry 1 Title</h2>
                             <p class="listing-content">
                                 Content for this entry goes here...
                             </p>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="listing">
                             <p><span class="date">00/00/0000</span>&emsp;<span class="topic">(Topic)</span></p>
-                            <h4 class="listing-title">Entry 2 Title</h3>
+                            <h3 class="listing-title">Entry 2 Title</h2>
                             <p class="listing-content">
                                 Content for this entry goes here...
                             </p>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="listing">
                             <p><span class="date">00/00/0000</span>&emsp;<span class="topic">(Topic)</span></p>
-                            <h4 class="listing-title">Entry 3 Title</h3>
+                            <h3 class="listing-title">Entry 3 Title</h2>
                             <p class="listing-content">
                                 Content for this entry goes here...
                             </p>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="listing">
                             <p><span class="date">00/00/0000</span>&emsp;<span class="topic">(Topic)</span></p>
-                            <h4 class="listing-title">Entry 4 Title</h3>
+                            <h3 class="listing-title">Entry 4 Title</h2>
                             <p class="listing-content">
                                 Content for this entry goes here...
                             </p>
@@ -78,14 +78,14 @@
                         </ul>
                     </div>
                 </div>
-                
-                <h3>Search Entries</h3>
+
+                <h2>Search Entries</h2>
             </div>
         </div>
         <div class="footer">
-            <a href="https://www.linkedin.com/in/morganjhenderson" class="fa fa-linkedin"></a>
-            <a href="https://github.com/morhenderson" class="fa fa-github"></a>
-            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google"></a>
+            <a href="linkedin.com/in/morganjhenderson" class="fa fa-linkedin" aria-label="View me on LinkedIn"></a>
+            <a href="github.com/morhenderson" class="fa fa-github" aria-label="Visit my GitHub"></a>
+            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google" aria-label="Send me an email"></a>
         </div>
 	</body>
     <script src="jscript/bootstrap.js"></script>

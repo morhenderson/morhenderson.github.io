@@ -12,20 +12,20 @@
     <body>
         <nav class="header navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="./">
+                <a class="navbar-brand d-none d-lg-block" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>organ H<span class="bg-contrast">e</span>nderson
                 </a>
-                <a class="navbar-brand d-block d-lg-none" href="./">
+                <a class="navbar-brand d-block d-lg-none" href="./" aria-hidden="true">
                     <span class="bg-contrast">M</span>H
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false">
-                    <i title="" class="fa fa-bars"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Mobile Menu">
+                    <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-default" id="site-menu">
                     <ul class="navbar-nav" aria-label="Menu">
                         <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
-                        <li class="nav-item unfinished"><a class="nav-link" href="blog">Blog</a></li>
+                        <li class="nav-item unfinished" aria-hidden="true"><a class="nav-link" href="blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                     </ul>
@@ -34,37 +34,37 @@
         </nav>
         <div class="main">
             <div class="float-box split-content">
-                <h2>Hi, I'm Morgan! <br class="d-block d-lg-none"/>I'm An...</h2>
-                <h3>Experienced Programmer</h3>
+                <h1>Hi, I'm Morgan! <br class="d-block d-lg-none"/>I'm An...</h1>
+                <h2>Experienced Programmer</h2>
                 <p>
                     Most of my experience is in scientific programming, with a brief stint as an application programmer 
                     for a state government. I have experience both with cutting-edge algorithms, including neural networks 
                     & Bayesian/Kalman filters, as well as more traditional statistical & data analysis methods.
                 </p>
-                <h3>Inquisitive Researcher</h3>
+                <h2>Inquisitive Researcher</h2>
                 <p>
                     I've conducted research as an undergraduate in the field of astronomy and at the graduate level 
                     in the field of materials engineering. My undergraduate research included exoplanet detection &
                     circumstellar disk evolution, and my graduate research was on the subject of nanoscale thermal transport.
                 </p>
-                <h3>Aspiring Leader</h3>
+                <h2>Aspiring Leader</h2>
                 <p>
                     In addition to aerospace engineering & physics courses, I've completed graduate coursework for a certificate 
                     in Engineering Management in the Aerospace Industry. Although my formal experience in leadership roles is 
                     limited, I'm very interested in any opportunities to develop those skills further. 
                 </p>
                 <div class="d-block d-lg-none">
-                    <img src="media/images/Me-in-Oregon.jpg">
+                    <img src="media/images/Me-in-Oregon.jpg" alt="Me on a beach in Oregon">
                 </div>
             </div>
             <div class="split-graphic d-none d-lg-flex">
-                <img src="media/images/Me-in-Oregon.jpg">
+                <img src="media/images/Me-in-Oregon.jpg" alt="Me on a beach in Oregon">
             </div>
         </div>
         <div class="footer">
-            <a href="https://www.linkedin.com/in/morganjhenderson" class="fa fa-linkedin"></a>
-            <a href="https://github.com/morhenderson" class="fa fa-github"></a>
-            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google"></a>
+            <a href="linkedin.com/in/morganjhenderson" class="fa fa-linkedin" aria-label="View me on LinkedIn"></a>
+            <a href="github.com/morhenderson" class="fa fa-github" aria-label="Visit my GitHub"></a>
+            <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google" aria-label="Send me an email"></a>
         </div>
 	</body>
     <script src="jscript/bootstrap.js"></script>

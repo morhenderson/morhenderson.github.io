@@ -20,7 +20,7 @@
 
 /* Style generic elements */
 
-h2 {
+h1 {
     font-family: "Bellota";
     font-weight: bold;
     font-size: 2.5em;
@@ -28,14 +28,14 @@ h2 {
     padding: 0;
 }
 
-h3 {
+h2 {
     font-size: 2em;
     margin: .5em 0 .5em 0;
     font-weight: 200;
     color: rgba(71,107,107,1.0);
 }
 
-h4 {
+h3 {
     font-size: 1.25em;
     font-weight: normal;
     margin: 1em 0 1em 0;
