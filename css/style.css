@@ -401,6 +401,7 @@ input[type="submit"] {
 
     form {
         width: 100%;
+        margin: 5% 0 2% 0;
     }
 
     .blog {
