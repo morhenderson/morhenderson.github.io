@@ -10,91 +10,63 @@
         <title>M. Henderson</title>
     </head>
     <body>
-        <nav class="header navbar navbar-expand-lg" role="navigation">
+        <nav class="header navbar navbar-expand-lg" role="navigation" id="main-nav">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="./" aria-hidden="true">
-                    <span class="bg-contrast">M</span>organ H<span class="bg-contrast">e</span>nderson
-                </a>
-                <a class="navbar-brand d-block d-lg-none" href="./" aria-hidden="true">
-                    <span class="bg-contrast">M</span>H
-                </a>
+                <h1 class="navbar-brand">
+                    <a class="d-none d-lg-block" href="./" aria-hidden="true">
+                        <span class="bg-contrast">M</span>organ H<span class="bg-contrast">e</span>nderson
+                    </a>
+                    <a class="d-block d-lg-none" href="./" aria-hidden="true">
+                        <span class="bg-contrast">M</span>H
+                    </a>
+                </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Mobile Menu">
-                    <i aria-label="" class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-default" id="site-menu">
                     <ul class="navbar-nav" aria-label="Menu">
                         <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
-                        <li class="nav-item unfinished"><a class="nav-link" href="blog">Blog</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="main">
+        <div class="main reduced-main">
             <div class="float-box content">
-                <h1>Contact <br class="d-block d-lg-none"/>Information</h1>
-
-                <h2>Email</h2>
-                <p>
-                    You can always contact me by email at:<br />
-                    <a href="mailto:morgan.james.henderson@gmail.com">
-                        morgan.james.henderson@gmail.com
-                    </a><br class="dbr"/>
-                    <strong>
-                        This is my preferred means of communication, especially for making new connections!
-                    </strong>
-                </p>
-
-                <h2> Contact Form</h2>
-                <p>
-                    Feel free to use the form below to send me a message. I'll do my best to address your submission promptly!
-                </p>
+                <h2>Contact Form</h2>
                 <form action="https://formkeep.com/f/722fc281657d" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
 
-                    <label for="name"><i class="fa fa-user"></i> Your Name</label><br />
-                    <input type="name" name="name" id="name" required><br class="dbr"/>
+                    <label for="name"><i class="fa fa-user"></i> Your Name</label>
+                    <input type="name" name="name" id="name" required>
 
-                    <label for="email"><i class="fa fa-envelope"></i> Email Address</label><br />
-                    <input type="email" name="email" id="email" required><br class="dbr"/>
+                    <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
+                    <input type="email" name="email" id="email" required>
 
-                    <label for="message"><i class="fa fa-comment"></i> Message</label><br />
+                    <label for="message"><i class="fa fa-comment"></i> Message</label>
                     <textarea name="message" id="message" cols="50" rows="5" required></textarea>
-                    <br class="dbr"/>
 
                     <input type="submit" value="Send">
 
                 </form>
 
-                <h2>Location</h2>
-                <p class="bm">
-                    I'm located in Arvada CO, which is in the Denver Metro area.
-                    <br class="dbr"/>
-                    <strong>
-                        I prefer to work remotely, and am happy to consider positions for companies  
-                        not based in my area!
-                    </strong>
-                </p>
-
-                <h2>Pronouns</h2>
-                <p>
-                    My preferred pronouns are 
-                    <a href="https://en.wikipedia.org/wiki/Non-binary_gender" class="bf" target="_blank">they/he.</a>
-                    <br class="dbr"/>
-                    <strong>
-                        Unsure how to address or refer to me? Please ask! I'm happy to answer 
-                        respectful questions about myself.
-                    </strong>
-                </p>
             </div>
         </div>
+        <div class="quote-banner">
+            <p id="quote"></p>
+        </div>
         <div class="footer">
-            <a href="linkedin.com/in/morganjhenderson" class="fa fa-linkedin" aria-label="View me on LinkedIn"></a>
-            <a href="github.com/morhenderson" class="fa fa-github" aria-label="Visit my GitHub"></a>
+            <a href="https://linkedin.com/in/morganjhenderson" class="fa fa-linkedin" aria-label="View me on LinkedIn"></a>
+            <a href="https://github.com/morhenderson" class="fa fa-github" aria-label="Visit my GitHub"></a>
             <a href="mailto:morgan.james.henderson@gmail.com" class="fa fa-google" aria-label="Send me an email"></a>
+        </div>
+        <div class="sub-footer">
+            <p>© Copyright 2023 Morgan Henderson - All rights reserved</p>
         </div>
 	</body>
     <script src="jscript/bootstrap.js"></script>
     <script src="jscript/jquery.js"></script>
+    <script src="jscript/sitecustom.js"></script>
+    <script type="text/javascript">window.onload=chooseQuote();</script>
 </html>

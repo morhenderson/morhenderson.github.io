@@ -31,8 +31,12 @@ h1 {
 h2 {
     font-size: 2em;
     margin: .5em 0 .5em 0;
-    font-weight: 200;
-    color: rgba(71,107,107,1.0);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.reduced-main .content h2 {
+    margin: .5em 5% .5em 5%;
 }
 
 h3 {
@@ -69,27 +73,46 @@ body {
     width: 100%;
     min-height: 100%;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "banner" "footer" "subfooter";
+    grid-template-rows: auto 1fr auto auto auto;
     margin: 0;
-    background-color: rgba(71,107,107,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .header {
     width: 100%;
     grid-area: header;
-    background-color: rgba(255,255,255,0.0);
-    margin: 2% 0 0 0;
-    padding: 0;
+    background-color: rgba(0,0,0,0.0);
+    margin: 0;
+    padding: 1% 0 1% 0;
+}
+
+.quote-banner {
+    grid-area: banner;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: rgba(255,255,255,1.0);
+}
+
+#quote {
+    font-size: 1.15em;
+    width: 100%;
 }
 
 .main {
-    width: 80%;
+    width: 75%;
     grid-area: main;
     display: flex;
     align-items: center;
-    margin: 0 10% 0 10%;
+    margin: 0 12.5% 0 12.5%;
     padding: 2% 0 2% 0;
+}
+
+.reduced-main {
+    width: 40%;
+    margin: 0 30% 0 30%;
 }
 
 .footer {
@@ -99,7 +122,17 @@ body {
     align-items: center;
     justify-content: center;
     margin: 2% 0 2% 0;
-    background-color: rgba(255,255,255,0.0);
+}
+
+.sub-footer {
+    font-size: .75em;
+    display: inline;
+    color: rgba(255,255,255,0.7);
+    grid-area: subfooter;
+    float: left;
+    margin-right: auto;
+    margin-left: 2%;
+    margin-bottom: 1%;
 }
 
 /* Style the navigation bar */
@@ -116,26 +149,28 @@ body {
 .navbar-brand {
     font-family: 'Bellota';
     font-size: 3.25em;
-    color: rgba(255,255,255,1.0);
-    border: solid rgba(255,255,255,0.0);
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
+.navbar-brand a{
+    color: rgba(255,255,255,1.0);
+    text-decoration: none;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
     outline: none;
     background-color: transparent;
-    text-decoration: none;
     color: rgba(255,255,255,1.0);
 }
 
-.navbar-brand:focus {
+.navbar-brand a:focus {
     border: solid rgba(255,255,255,1.0);
 }
 
 .bg-contrast {
-    color: rgba(179,204,204,1.0);
+    color: rgb(186, 187, 187);
 }
 
 .container-fluid button {
@@ -187,7 +222,7 @@ body {
 }
 
 .float-box {
-    background-color: rgba(255,255,255,1.0);
+    background-color: rgba(255,255,255,0.7);
     padding: 2% 3% 3% 3%;
     color: rgba(0,0,0,1.0);
     border-radius: 0 2em 2em 2em;
@@ -241,12 +276,6 @@ iframe {
     margin: 0 0 .5em 0;
 }
 
-.dbr {
-    display: block;
-    content: "";
-    margin: .5em 0 0 0;
-}
-
 .bf {
     font-weight: bold;
 }
@@ -260,13 +289,17 @@ form {
     width: 50%;
     padding: 2%;
     margin: 2% 0 2% 0;
-    background-color: rgba(205,230,230,1.0);
     border-radius: 0 2em 2em 2em;
+}
+
+.reduced-main .content form {
+    width: 90%;
+    margin: 2% 5% 2% 5%;
 }
 
 form label {
     width: 100%;
-    margin: 0 0 1% 0;
+    margin: 1% 0 1% 0;
     font-weight: bold;
 }
 
@@ -276,6 +309,7 @@ form label i {
 
 form textarea {
     width: 100%;
+    margin: 0 0 3% 0;
 }
 
 input[type="submit"] {
@@ -349,10 +383,6 @@ input[type="submit"] {
     border-radius: 25%;
 }
 
-.unfinished {
-    display: none;
-}
-
 /* Style the footer */
 
 .footer .fa {
@@ -414,5 +444,9 @@ input[type="submit"] {
 
     .listing {
         margin: 5% 0 10% 0;
+    }
+
+    .quote-banner {
+        display: none;
     }
 }
