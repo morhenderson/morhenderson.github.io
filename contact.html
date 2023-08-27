@@ -2,9 +2,10 @@
 <html lang="en-us">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="viewport" content="initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="media/images/atom-logo.png"/>
         <title>M. Henderson</title>
@@ -26,7 +27,6 @@
                 <div class="collapse navbar-collapse navbar-default" id="site-menu">
                     <ul class="navbar-nav" aria-label="Menu">
                         <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                     </ul>
@@ -39,13 +39,13 @@
                 <form action="https://formkeep.com/f/722fc281657d" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
 
                     <label for="name"><i class="fa fa-user"></i> Your Name</label>
-                    <input type="name" name="name" id="name" required>
+                    <input type="name" name="name" id="name" autocomplete="name" required>
 
                     <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
 
                     <label for="message"><i class="fa fa-comment"></i> Message</label>
-                    <textarea name="message" id="message" cols="50" rows="5" required></textarea>
+                    <textarea name="message" id="message" cols="50" rows="5" autocomplete="off" required></textarea>
 
                     <input type="submit" value="Send">
 

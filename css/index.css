@@ -1,0 +1,53 @@
+/*
+  index.css
+  Index page stylesheet for MartianMorgan.com
+*/
+
+h2 {
+    margin: .5em 0 .5em 0;
+}
+
+.main {
+    width: 75%;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    margin: 0 12.5% 0 12.5%;
+    padding: 2% 0 2% 0;
+}
+
+.split-content {
+    width: 70%;
+    float: left;
+    margin: 0 5% 0 0;
+}
+
+.split-graphic {
+    width: 25%;
+    float: left;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+/* Style for mobile */
+
+@media only screen and (max-width: 820px) {
+
+    .split-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .split-graphic {
+        width: 100%;
+    }
+
+    .d-lg-none img {
+        width : 70%;
+        margin : 5% 15% 5% 15%;
+    }
+
+}

@@ -1,5 +1,5 @@
 
-
+// Randomly selects one of my favorite quotes for display
 function chooseQuote() {
 
     // Define set of quotes
