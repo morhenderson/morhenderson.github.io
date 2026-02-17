@@ -29,7 +29,7 @@ html {
     padding: 0;
     display: table;
     font-family: 'Helvetica';
-    background-image: url(../media/images/Mt-Roberts.jpg);
+    background-image: url(../media/images/background.jpg);
     background-size: cover;
 }
 
@@ -66,7 +66,7 @@ body {
     grid-template-areas: "header" "main" "banner" "footer" "subfooter";
     grid-template-rows: auto 1fr auto auto auto;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.33);
     bottom: 0;
 }
 
